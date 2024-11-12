@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetes Prediction</h1>
+        <form id="diabetesForm">
+            <div class="left-column">
+                <label for="Pregnancies">Pregnancies:</label>
+                <input type="number" id="Pregnancies" required>
+
+                <label for="Glucose">Glucose:</label>
+                <input type="number" id="Glucose" required>
+
+                <label for="BloodPressure">Blood Pressure:</label>
+                <input type="number" id="BloodPressure" required>
+
+                <label for="SkinThickness">Skin Thickness:</label>
+                <input type="number" id="SkinThickness" required>
+            </div>
+
+            <div class="right-column">
+                <label for="Insulin">Insulin:</label>
+                <input type="number" id="Insulin" required>
+
+                <label for="BMI">BMI:</label>
+                <input type="number" id="BMI" step="0.1" required>
+
+                <label for="DiabetesPedigreeFunction">Diabetes Pedigree Function:</label>
+                <input type="number" id="DiabetesPedigreeFunction" step="0.01" required>
+
+                <label for="Age">Age:</label>
+                <input type="number" id="Age" required>
+            </div>
+
+            <button type="button" onclick="submitForm()">Check Diabetes</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

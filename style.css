@@ -1,0 +1,95 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    max-width: 600px;
+    /* Increase width to fit two columns */
+    width: 90%;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0066cc;
+}
+
+/* Form container styling */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Space between the columns */
+    gap: 20px;
+    /* Space between rows */
+}
+
+/* Form label and input styling */
+form label {
+    display: block;
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Column styling: Left and Right */
+form .left-column,
+form .right-column {
+    width: 48%;
+    /* Ensure 2 columns with 2% space between them */
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Result text styling */
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
